@@ -96,7 +96,7 @@ label {
 <input id="username" type="text"  name="username" value="" ></br>
 <label>Password</label>
 <input type="password"  name="password" value=""></br>
-<a href="Welcome.jsp">Submit</a>	
+<a href="success.jsp">Submit</a>	
 </div>
 </body>
 </html>
