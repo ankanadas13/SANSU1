@@ -4,7 +4,7 @@
   <groupId>com.maa</groupId>
   <artifactId>sam-app1</artifactId>
   <packaging>war</packaging>
-<version>${BUILD_NUMBER}</version>
+<version>0.0.1-SNAPSHOT</version>
   <name>sam-app1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
