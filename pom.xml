@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.maa</groupId>
   <artifactId>sam-app1</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>sam-app1 Maven Webapp</name>
+  <version>${BUILD_NUMBER}</version>
+<packaging>war</packaging>
+<name>sam-app1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
   <properties>
