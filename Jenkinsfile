@@ -50,8 +50,7 @@ sh label: '', script: 'curl -u $usr:$pass --upload-file target/sam-app1.war http
  stage ('Deploy'){
             steps{
                  withCredentials([usernamePassword(credentialsId: 'devops-tomcat', passwordVariable: 'pass', usernameVariable: 'userId')]) {
-              //withCredentials([usernameColonPassword(credentialsId: 'Tomcat server secret key', variable: 'password1')]) {
-     //echo "My password is '${password1}'!"
+              
                     sh "cd target;ls"
                     sh label: '', script:'curl -u "${userId}" "${pass}" http://ec2-18-224-182-74.us-east-2.compute.amazonaws.com:8080/manager/text/undeploy?path=/Sansu-deploy'
                     sh label: '', script: 'curl -u  $userId:$pass --upload-file target/sam-app1.war http://ec2-18-224-182-74.us-east-2.compute.amazonaws.com:8080/manager/text/deploy?config=file:/var/lib/tomcat8/sam-app1.war\\&path=/Sansu-deploy'
