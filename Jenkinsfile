@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                  sh 'echo $BUILD_NUMBER'
+                
                 withCredentials([string(credentialsId: 'Sansu-git', variable: 'git')]) {
                 echo "My password is '${git}'!"
                 checkout([$class: 'GitSCM',
